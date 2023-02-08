@@ -1,0 +1,55 @@
+<section id="section_Prods">
+    <h1>Criar Produto</h1>
+
+    {{#each erros}}
+        <div class="error">{{texto}}</div>
+    {{else}}
+    {{/each}}
+    
+    <form action="/produtos/createprods" method="post" class="form_Prods">
+    <label for="" class="cat_form"> Nome do Autor:  <smail>*</smail>
+        <input type="text" name="nomeAutor" placeholder="Nome_do_Autor">
+    </label>
+
+    <div class="campo_prods">
+        <label for="">Titulo do produto: <smail>*</smail>
+             <input type="text" name="titulo" required="required"  placeholder="Titulo_">
+        </label>
+           
+        <label for="">Slug: <smail>*</smail>
+            <input type="text" name="slug" required="required" placeholder="Slug_">
+        </label>
+    </div>
+    
+    <div class="campo_prods">
+        <label for="">Preço <smail>*</smail>
+             <input type="number" name="preco" required="required" placeholder="Preço_">
+        </label>
+
+        <label for="">Descrição: <smail>*</smail>
+            <input type="text" name="descricao" required="required" placeholder="Descrição_">
+        </label>
+    </div>
+
+    <label for="" class="cat_form">Categoria: <smail>*</smail>
+         <select name="nomeCat" id="">
+                <option selected value="selected">Escolha a categoria</option>
+            {{#each categorias}}
+                {{#if nome}}
+                    <option value="{{nome}}">{{nome}}</option>
+                {{else}}
+                {{/if}}
+            {{else}}
+                <option value="0">Nehuma categoria, digite no campo!</option>
+            {{/each}}
+         </select>
+    </label>
+
+        <label class="cat_form_cont" for="">Conteudo:
+           <textarea type="text" name="conteudo" wrap="hard"></textarea>
+        </label>
+        
+    <button type="submit">Criar Produto</button>
+    </form>
+    <a class="listProds" href="/produtos/listprods">Lista de produtos</a>
+</section>

@@ -1,0 +1,43 @@
+{{#each erros}}
+    <div class="error">{{texto}}</div>
+{{else}}
+{{/each}}
+
+<section id="section_cat">
+    <div class="campo_div">
+    <h1>Edição de Categorias </h1>
+
+    <form action="/categorias/deletarcat/{{categoria._id}}" method="post">
+         <button class="btn_delete_cat_two">Deletar</button>
+    </form>
+    
+    </div>
+    <form action="/categorias/editadocats" method="post" class="form_cat">
+        <input type="hidden" name="id" value="{{categoria._id}}">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome_cat" placeholder="Nome_" value="{{categoria.nome}}">
+
+       <label for="">Escolha uma categoria já existente:</label>
+        <select name="nomeCat" id="">
+                <option selected value="selected">Escolha a categoria</option>
+            {{#each categorias}}
+                {{#if nome}}
+                    <option value="{{nome}}">{{nome}}</option>
+                {{else}}
+                {{/if}}
+            {{else}}
+                <option value="0">Nehuma categoria, digite no campo!</option>
+            {{/each}}
+        </select>
+        <p class="inf">*Caso a categoria desejada esteje nessa lista, escolha, e deixe o campo
+            nome em branco, caso não, voçe tem a opção de digitar o nome da categoria desejada!
+            Mas se esses dois campos forem preenchidos, o valor do campo nome irá prevalecer!
+        </p>
+
+        <label for="slug">Slug: </label>
+        <input type="text" name="slug" id="slug_cat" placeholder="Slug_" value="{{categoria.slug}}">
+
+        <button type="submit">Editar Categoria</button>
+    </form>
+    <a href="/categorias/listcategorias" class="volt_cats"><- Voltar </a>
+</section>

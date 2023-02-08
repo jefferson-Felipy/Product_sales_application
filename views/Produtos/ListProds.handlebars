@@ -1,0 +1,11 @@
+<article>
+    <h1>Lista de produtos</h1>
+    <section>
+        {{#each produtos}}
+            <h2>Titulo: {{titulo}}</h2>
+            
+        {{else}}
+            <div class="nenhum_prods">nenhum produto</div>
+        {{/each}}
+    </section>
+</article>

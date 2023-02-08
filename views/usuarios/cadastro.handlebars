@@ -1,0 +1,54 @@
+<article class="article_form_cad">
+    <div class="campo_msg">
+        {{#each erros}}        
+            <div class="error msg">{{texto}}</div>
+        {{else}}
+        {{/each}}
+</div>
+    <h2 class="title_cad">Cadastro de Usuarios</h2>
+
+    <form action="/usuarios/cadastroruser" method="post">
+            <label for="">Nome:<smail>*</smail>
+                <input type="text"  name="nome" placeholder="Nome" required="required">
+            </label>
+
+            <label for="">Sobrenome:<smail>*</smail>
+                <input type="text" name="sobrenome" placeholder="Sobrenome" required="required">
+            </label>
+
+        <label for="">Deseja ser um Administrador? </label>
+        <div class="camp_adm">
+            <label for="sim">Sim
+                <input type="radio" name="eAdmin" id="sim" value="1" class="adm">
+            </label>
+
+            <label for="nao">Não
+                <input type="radio" name="eAdmin" id="nao" value="0" class="adm" checked="checked">
+            </label>
+        </div>
+        
+            <label for="">Email:<smail>*</smail>
+                <input type="email" name="email" placeholder="exemplo@gmail.com" required="required">
+            </label>
+
+            <label for="">Confirma Email:<smail>*</smail>
+                <input type="email" name="email2" placeholder="exemplo@gmail.com" required="required">
+            </label>
+
+            <label for="">Senha:<smail>*</smail>
+                <div class="campo_senha_img">
+                    <input type="password" name="senha" required="required" class="senha1">
+                    <img src="/imagens/ver.png" alt="" onclick="img_senha();" class="img_senha">
+                </div>
+            </label>
+
+            <label for="">Confirma Senha:<smail>*</smail>
+                <div class="campo_senha_img">
+                    <input type="password" name="senha2" class="senha2" required="required">
+                    <img src="/imagens/ver.png" onclick="img_senha2();" alt="" class="img_senha">
+                </div>
+            </label>
+
+            <button type="submit">Cadastrar-se</button>
+    </form>
+</article>

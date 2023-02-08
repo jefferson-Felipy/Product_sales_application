@@ -1,0 +1,163 @@
+#section_Prods{
+    width:75%;
+    border-radius:5px;
+    margin:20px 10px 50px 10px;
+    background-color: rgb(235, 232, 235);
+    border-radius:5px;
+    box-shadow:4px 5px 6px rgb(189, 189, 189);
+}
+#section_Prods h1{
+    margin:20px 10px 35px 20px;
+    font-size:28px;
+}
+
+#section_Prods .form_Prods{
+    width: 100%;
+}
+#section_Prods .form_Prods .campo_prods{
+    width:100%;
+    display:flex;    
+    flex-wrap:wrap;
+}
+
+smail{
+    width:60px;
+    margin:0px 15px 0px 3px;
+    color:red;
+    font-size:18px;
+    font-weight:bold;
+}
+
+#section_Prods .form_Prods .campo_prods label,.cat_form,.cat_form_cont{
+    width:48%;
+    padding:10px 10px 10px 70px;
+    line-height: 35px;
+    font-size:17px;
+    font-weight:600;
+    display: flex;
+    flex-wrap:wrap;
+}
+#section_Prods .form_Prods .campo_prods input{
+    width:80%;
+    height:30px;
+    outline:none;
+    border-radius:5px;
+    padding-left:10px;
+    font-size:18px;
+}
+
+.cat_form smail{
+    width:28px;
+    margin:0px 1px 0px 3px;
+}
+.cat_form{
+    margin:10px 10px 10px 0px;
+}
+
+.cat_form input{
+    padding-left:10px;
+    font-size:18px;
+    width:80%;
+    height:30px;
+}
+.cat_form select{
+    font-size:18px;
+    width:80%;
+    height:30px;
+}
+
+.cat_form_cont{
+    width:98%;
+    display:flex;
+    flex-direction:column;
+}
+.cat_form_cont textarea{
+    width:90%;
+    height:120px;
+    outline:none;
+    border-radius:5px;
+    padding-left:10px;
+    font-size:18px;
+}
+
+#section_Prods .form_Prods button{
+    width:30%;
+    height:40px;
+    background-color: rgb(35, 35, 239);
+    color:#fff;
+    font-weight:bold;
+    font-size:18px;
+    cursor:pointer;
+    margin:20px auto;
+    position:relative;
+    left:50%;
+    transform: translate(-50%);
+}
+#section_Prods .form_Prods button:hover{
+    background-color: rgb(0, 0, 255);
+    color:#ccc;
+}
+
+/*--------- Estilização da lista de produtos da página Home ------------ */
+.list_produts{
+    width:100%;
+    margin:20px 0px;
+    background-color: rgb(233, 231, 231);
+    display:flex;
+    flex-wrap:wrap;
+    padding-left:13px;
+}
+.list_produts .title_produts{
+    margin:10px 10px 20px 25px;
+    width:80%;
+}
+
+.list_produts .camp_produtos{
+    width:30%;
+    margin:10px 15px 15px 15px;
+    box-shadow:5px 6px 7px rgb(189, 189, 189);
+}
+.list_produts .camp_produtos h3{
+    width:100%;
+    border-bottom:1px solid #000;
+    text-align:center;
+    padding:10px;
+    background-color: rgb(244, 240, 240);
+}
+.list_produts .camp_produtos h2{
+    margin:10px;
+}
+.list_produts .camp_produtos .btn_det,.btn_comp{
+    width:40%;
+    border:none;
+    padding:5px;
+    font-size:18px;
+    font-weight:bold;
+    margin:10px 10px 15px 15px;
+    color:rgb(239, 234, 234);
+    cursor:pointer;
+}
+.btn_det{
+    background-color: rgb(6, 6, 169);
+}
+.btn_comp{
+    background-color: rgb(19, 121, 42);
+}
+.btn_det:hover{
+    background-color: rgb(18, 18, 229);
+}
+.btn_comp:hover{
+    background-color: rgb(33, 185, 68);
+}
+
+.list_produts .camp_produtos .link_carr{
+    color:blue;
+    width:90%;
+    height:100px;
+    margin:5px 10px 15px 15px;
+    text-decoration: none;
+}
+.list_produts .camp_produtos .link_carr:hover{
+    color:rgb(13, 13, 155);
+    text-decoration: underline;
+}

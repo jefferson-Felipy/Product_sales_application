@@ -1,0 +1,17 @@
+<article class="login_user">
+    <h2 class="title_login">Login</h2>
+    <form action="/usuarios/login" method="post">
+        <label for="">Email:<smail>*</smail>
+            <input type="text" name="email">
+        </label>
+
+        <label for="">Senha:<smail>*</smail>
+                <div class="campo_senha_img_login">
+                    <input type="password" name="senha" required="required" class="senha1">
+                    <img src="/imagens/ver.png" alt="" onclick="img_senha();" class="img_senha img_senha_login">
+                </div>
+        </label>
+
+        <button type="submit">Entrar</button>
+    </form>
+</article>

@@ -1,0 +1,431 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serifa;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width:100%;
+    height:100vh;
+    background-color: #fff;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+/* -------------------- NavBar ------------------------- */
+#header_page{
+    width:100%;
+    height:90px;
+    padding-top:5px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+/* ------------------------- */
+.campo_logo{
+    display:flex;
+    align-items: center;
+}
+#header_page .img_logo{
+    width:50px;
+    height:50px;
+    border-radius:24px;
+    margin:0px 5px 0px 0px;
+}
+#header_page #title_link{
+    text-decoration: none;
+    color: #000;
+    cursor:pointer;
+}
+/* ------------------------- */
+#header_page #section_log{
+    padding-top:7px;
+    text-align:center;
+    display:flex;
+}
+#header_page #ul_home{
+    display:flex;
+    flex-wrap:wrap;
+}
+#header_page #ul_home li{
+    list-style: none;
+    padding:5px;
+    margin: 0px 5px 0px 5px;
+}
+#header_page #ul_home li a{
+    text-decoration: none;
+    font-size:18px;
+    color: #000;
+    cursor:pointer;
+}
+/* ------------------------- */
+#header_page .campo_log{
+    padding:8px 2px 0px 2px;
+}
+#section_log .link_log{
+    padding:8px;
+    margin:0px 5px;
+    text-align:center;
+    color:#fff;
+    text-decoration: none;
+    background-color: rgb(29, 29, 146);
+    border:none;
+    outline: none;
+    border-radius:2px;
+    cursor:pointer;
+}
+#section_log .link_log:hover{
+    background-color: rgb(73, 73, 223);
+    color:#ccc;
+}
+
+/* ---------------- Menu Hamburguer ----------------- */
+#menu_hamburguer{
+    font-size:40px;
+    cursor: pointer;
+    font-weight:bold;
+    margin:0px 0px 0px 20px;
+}
+/* ------------------------- */
+.menu_list{
+    width:41%;
+    height:100vh;
+    background-color: rgb(237, 235, 235);
+    position:fixed;
+    left:59%;
+    top:1px;
+    display:none;
+}
+.add{
+    display:block;
+    z-index: 1000;
+}
+.fechar_menu{
+    display:block;
+    width:50px;
+    height:40px;
+    margin:10px 0px 0px 10px;
+}
+/* ------------------------- */
+.menu_list .logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:28px;
+    text-align:center;
+    margin:20px 4px;
+    padding:25px; 
+}
+/* ------------------------- */
+.menu_list .campo_menu{
+    padding:5px 10px;
+}
+.menu_list .campo_menu li{
+    list-style: none;
+    padding:5px;
+    width:100%;
+    border-bottom:1px solid #000;
+    font-size:24px;
+    margin:15px 5px;
+}
+.menu_list .campo_menu li a{
+    text-decoration: none;
+    font-size:20px;
+    color: #000;
+    cursor:pointer;
+}
+.menu_list .campo_menu li a:hover{
+    color:#ccc;
+}
+.buttons_menus{
+    margin:10px 5px 5px 32%;   
+}
+.link_menu{
+    padding:8px;
+    margin:0px 5px;
+    text-align:center;
+    color:#fff;
+    text-decoration: none;
+    background-color: rgb(29, 29, 146);
+    border:none;
+    outline: none;
+    border-radius:2px;
+    cursor:pointer;
+}
+.link_menu:hover{
+    background-color: rgb(73, 73, 223);
+    color:#ccc;
+}
+.hr{
+    margin:40px auto;
+    width:70%;
+}
+/* ------------------------- */
+.redes{
+    position:absolute;
+    bottom:20px;
+    left:20%;
+
+}
+.redes a{
+    margin:5px;
+}
+.redes img{
+    width:36px;
+    height:36px;
+}
+.redes .one:hover{
+    box-shadow:4px 3px 5px rgb(49, 47, 47);
+    background-image: linear-gradient(to left,rgb(63, 44, 186),rgb(176, 47, 72));
+    border-radius:12px;
+}
+.redes .two:hover{
+    box-shadow:4px 3px 5px rgb(49, 47, 47);
+    background-color: rgb(68, 33, 208);
+    border-radius:40%;
+}
+.redes .three:hover{
+    box-shadow:4px 3px 5px rgb(49, 47, 47);
+    background-color: rgb(29, 167, 66);
+    border-radius:40%;
+}
+.redes .four:hover{
+    box-shadow:4px 3px 5px rgb(49, 47, 47);
+    background-color: rgb(61, 60, 60);
+    border-radius:40%;
+}
+.redes .five:hover{
+    box-shadow:4px 3px 5px rgb(49, 47, 47);
+    background-color: rgb(223, 17, 17);
+    border-radius:5px;
+}
+/* ------------Body---------------- */
+.campo_pesc{
+    width:34%;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    left:28%;
+    margin:4px 10px 20px 10px;
+}
+.campo_pesc input{
+    width:224px;
+    height:34px;
+    font-weight:600;
+    padding-left: 10px;
+    font-size:17px;
+    outline:none;
+    border-radius:10px 0px 0px 10px;
+}
+.campo_pesc button{
+    width:55px;
+    height:35px;
+    background-color: blue;
+    color:#fff;
+    border:none;
+    border-radius:0px 8px 8px 0px;
+    cursor:pointer;
+    font-weight:bold;
+}
+.campo_pesc img{
+    width:30px;
+    height:30px;
+    margin-left:36px;
+}
+
+/* ================================================= */
+
+#article_campo{
+    width:100%;
+    height:70%;
+    margin:0px 0px 20px 0px;
+    display:flex;
+    align-items: center;
+    background-color: rgb(240, 235, 235);
+}
+#article_campo .img_one_details,
+#article_campo .img_two_details,
+#article_campo .img_three_details,
+#article_campo .img_four_details,
+#article_campo .img_five_details,
+#article_campo .img_six_details{
+    position:absolute;
+    border-radius:30%;
+    width:120px;
+    height:120px;
+    opacity:.2;
+}
+#article_campo .img_one_details{
+    left:60px;
+    top:29%;
+}
+#article_campo .img_two_details{
+    left:34%;
+    top:36%;
+}
+#article_campo .img_three_details{
+    left:30%;
+    top:75%;
+}
+#article_campo .img_four_details{
+    left:4%;
+    top:70%;
+}
+#article_campo .img_five_details{
+    left:18%;
+    top:65%;
+}
+#article_campo .img_six_details{
+    left:21%;
+    top:23%;
+}
+
+#article_campo .section_campo{
+    width:48%;
+}
+#article_campo .section_one{
+    text-align: center;
+}
+#article_campo .section_two{
+    text-align:justify;
+
+}
+.section_two p{
+    width:97.5%;
+}
+.section_two img{
+    width:95%;
+    height:70%;
+    border-radius:10px;
+    margin:20px 10px 10px 10px;
+}
+
+/* ---------------------------FOOTER--------------------------- */
+#footer{
+    width:100%;
+    background-color: rgb(181, 176, 176);
+    display:flex;
+    flex-direction:column;
+}
+
+#footer .footer_logo{
+    width:15%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:20px;
+    text-align:center;
+    margin:10px 4px;
+}
+#footer .footer_logo a{
+    color:#000;
+    text-decoration:none;
+}
+#footer .footer_logo img{
+    width:45px;
+    height:45px;
+    border-radius:24px;
+    margin:0px 5px 0px 13px;
+    z-index: 1000;
+}
+/* ======================================================== */
+.footer_section_campo{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+.footer_section_campo .campo_footer{
+    width:22%;
+    margin:10px;
+    display:flex;
+    flex-direction:column;
+}
+.footer_section_campo .campo_footer h2{
+    font-weight:bold;
+    margin: 5px;
+}
+.footer_section_campo .campo_footer a{
+    color:#000;
+    text-decoration: none;
+    margin:5px;
+}
+.footer_section_campo .campo_footer a:hover{
+    text-decoration: underline;
+    color:rgb(66, 64, 64);
+}
+/* ======================================================= */
+.footer_redes{
+    width:100%;
+    margin-top:30px;
+    display:flex;
+}
+.footer_redes .footer_details{
+    width:28%;
+    margin:15px 15px 35px 15px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_redes .details_two{
+    flex-direction: column;
+}
+.footer_redes .details_two h3{
+    margin:10px;
+}
+.footer_redes .details_two div img{
+    width: 35px;
+    height: 35px;
+}
+/* ======================================================== */
+.descricao_details{
+    width:100%;
+    height:50vh;
+    margin:25px 0px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.descricao_details .details_sevice_one{
+    width:70%;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+.descricao_details .details_sevice_one h2{
+    margin:10px;
+    text-align:center;
+    text-decoration:underline rgb(8, 8, 107);
+}/*---------------------------------------------*/
+.details_sevice_two{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+.details_sevice_two .desc_campo{
+    width:30%;
+    height:220px;
+    margin:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details_sevice_two .desc_campo img{
+    margin:10px;
+    width:60px;
+    height:60px;
+}
+.details_sevice_two .desc_campo h3{
+    text-decoration: underline;
+    margin:10px;
+}
+.details_sevice_two .desc_campo p{
+    margin:10px;
+    font-weight:600;
+    text-align:center;
+}

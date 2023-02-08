@@ -1,0 +1,96 @@
+{{!-- -----------------Body--------------------- --}}
+{{#if user}}
+    <article class="camp_article_home">
+        <details class="details_User">
+            <summary class="summary_User">
+                <label for="">Usuario</label>
+            </summary>
+            <a href="">Sobre</a>
+            <a href="">Dados da conta</a>
+            <a href="">Alterar dados da conta</a>
+        </details>
+
+        <div class="camp_logout">
+            <a href="/usuarios/logout"><button>LogOut</button></a>
+        </div>
+    </article>
+{{else}}
+{{/if}}
+
+<form class="campo_pesc">
+    <input type="text" name="" id="" placeholder="Categorias de produtos">
+    <button type="submit">Buscar</button>
+    <a href=""><img src="/imagens/carrinho.png" alt=""></a>
+</form>
+<article id="article_campo">
+    <img src="/imagens/img1.jpg" alt="" class="img_one_details">
+    <img src="/imagens/img2.jpg" alt="" class="img_two_details">
+    <img src="/imagens/img3.jpg" alt="" class="img_three_details">
+    <img src="/imagens/img4.jpg" alt="" class="img_four_details">
+    <img src="/imagens/img2.jpg" alt="" class="img_five_details">
+    <img src="/imagens/img3.jpg" alt="" class="img_six_details">
+
+    <section class="section_campo section_one">
+        <p style="color:blue">Olá, seja bem-vinda(o)</p>
+        <h2>Esse é um site de vendas de produtos!<br>Aqui voçê faz isso de graça!</h2>
+        <p>E como resultado, <smail style="color:green;">voçe cresce no mundo do E-commerce</smail>!</p>
+    </section>
+    <section class="section_campo section_two">
+        <img src="/imagens/pd1.jpg" alt="">
+        <p>O sistema E-commerce se tornou uma das principais ferramentas mais utilizadas na atualidade.
+            De acordo com as midias sociais, vários produtos sao vendidos drante todo o dia de um bom comerciante
+            que deseja alcancar suas metas, para isso, esta aqui, um site que voce pode simplismente 
+            inserir seus produtos e vende-los, sem nehuma taxa, e quantos produtos desejar!
+        </p>
+    </section>
+</article>
+
+<article class="descricao_details">
+    <section class="details_sevice_one">
+        <h2>Quais Serviços são Disponibilizados</h2>
+        <p>O sistema E-commerce se tornou uma das principais ferramentas mais utilizadas na atualidade.
+            De acordo com as midias sociais, vários produtos sao vendidos drante todo o dia de um bom comerciante
+            que deseja alcancar suas metas, para isso, esta aqui, um site que voce pode simplismente 
+            inserir seus produtos e vende-los, sem nehuma taxa, e quantos produtos desejar!
+        </p>
+    </section>
+
+    <section class="details_sevice_two">
+        <section class="desc_campo">
+            <img src="/imagens/est.png" alt="">
+            <h3>Aplicação Estruturada</h3>
+            <p>Estrutura compacta e bem organizada no que se conjulga a um aplicação que realca um sistema real integrado.</p>
+        </section>
+        <section class="desc_campo">
+            <img src="/imagens/seg.png" alt="">
+            <h3>Segurança Embutida</h3>
+            <p>Aplicação integrada com um sistema de segurança, abrangendo a responsabilidade, como a autenticação, dados armazenados, tudo em seguro.</p>
+        </section>
+        <section class="desc_campo">
+            <img src="/imagens/prog.png" alt="">
+            <h3>Desenvolvimento Web</h3>
+            <p>Criação de uma aplicação pensando na esperiencia do usuário e com a melhor qualidade do desenvolvimento web.</p>
+        </section>
+</section>
+</article>
+
+<article class="list_produts">
+    <h2 class="title_produts">Produtos</h2>
+    {{#each produtos}}
+            <section class="camp_produtos">
+                <h3>{{titulo}}</h3>
+                <h2>Preço: {{preco}}</h2>
+                <p>Categoria: {{categoria.nome}}</p>
+                <p>Autor: {{nomeAutor}}</p>
+                <hr>
+                <p>Descrição: {{descricao}}</p>
+                <hr>
+                <a href=""><button class="btn_det">Detalhes</button></a>
+                <a href=""><button class="btn_comp">Comprar</button></a>
+                <a class="link_carr" href="">Adicionar no carrinho</a>
+            </section>
+    {{else}}
+        <h3 class="Neh_prod">Nenhum Produto</h3>
+    {{/each}}
+    
+</article>

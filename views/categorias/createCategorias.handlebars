@@ -1,0 +1,37 @@
+{{!-- Estrutura each para exibição de erros_ --}}
+{{#each erros}}
+    <div class="error">{{texto}}</div>
+{{else}}
+{{/each}}
+
+<section id="section_cat">
+    <h1>Criar Categoria</h1>
+    <form action="/categorias/addcategoria" method="post" class="form_cat">
+        
+        <label for="nome">Nome:<smail>*</smail> </label>
+        <input type="text" name="nome" id="slug_cat" placeholder="Nome_">
+
+        <label for="">Escolha uma categoria já existente:</label>
+        <select name="nomeCat" id="">
+                <option selected value="selected">Escolha a categoria</option>
+            {{#each categorias}}
+                {{#if nome}}
+                    <option value="{{nome}}">{{nome}}</option>
+                {{else}}
+                {{/if}}
+            {{else}}
+                <option value="0">Nehuma categoria, digite no campo!</option>
+            {{/each}}
+        </select>
+        <p class="inf">*Caso a categoria desejada esteje nessa lista, escolha, e deixe o campo
+            nome em branco, caso não, voçe tem a opção de digitar o nome da categoria desejada!
+            Mas se esses dois campos forem preenchidos, o valor do campo nome irá prevalecer!
+        </p>
+
+        <label for="slug">Slug:<smail>*</smail> </label>
+        <input type="text" name="slug" id="slug_cat" placeholder="Slug_">
+    
+        <button type="submit">Cadastrar</button>    
+    </form>
+    <a class="listCats" href="/categorias/listcategorias">Visualizar Lista das Categorias</a>
+</section>

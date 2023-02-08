@@ -1,0 +1,29 @@
+<article class="cat_list">
+
+    <div class="div_list_cats">
+        <h2 class="categorias_title">Categorias</h2>
+
+        {{#if user}}
+            <a class="link_cats_form" href="/categorias/formcats">Criar Nova Categoria</a>
+        {{else}}
+        {{/if}}
+        
+    </div>
+
+    <div class="campo_list_cats">
+        {{#if visualCat}}
+            {{#each categorias}}
+                <a href=""><h4 class="h4_cats">{{nome}}</h4></a>
+            {{else}}
+                <h3>Nenhuma Categoria Cadastrada!</h3>
+            {{/each}}
+        {{else}}
+            {{#each categorias}}
+                <a href=""><h4 class="h4_cats">{{nome}}</h4></a>
+            {{else}}
+                <h3>Nenhuma Categoria Cadastrada!</h3>
+            {{/each}}
+        {{/if}}
+    </div>
+
+</article>

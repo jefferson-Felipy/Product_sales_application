@@ -1,0 +1,266 @@
+/* Estilização dos campos de exibição das mensagens de sucesso e error */
+.success_msg,.error_msg,.error{
+    font-weight:bold;
+    font-size:19px;
+    margin:10px 30px 2px 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.error_adm{
+    width:80%;
+    height:50px;
+    background-color: rgb(176, 76, 76);
+    color:rgb(243, 237, 237);
+    box-shadow: 2px 3px 4px rgb(122, 4, 4);
+    text-align:center;
+    padding-top:11px;
+    font-size:24px;
+    margin-bottom:10px;
+}
+.error{
+    width:50%;
+    height:50px;
+    background-color: rgb(176, 76, 76);
+    color:rgb(243, 237, 237);
+    box-shadow: 2px 3px 4px rgb(91, 3, 3);
+}
+.success_msg{
+    width:50%;
+    height:50px;
+    background-color: rgb(108, 176, 104);
+    color:rgb(243, 237, 237);
+    box-shadow: 2px 3px 4px rgb(3, 91, 3);
+}
+.error_msg{
+    width:50%;
+    height:50px;
+    background-color: rgb(176, 76, 76);
+    color:rgb(243, 237, 237);
+    box-shadow: 2px 3px 4px rgb(91, 3, 3);
+}
+
+.msg{
+    width:80%;
+    height:30px;
+    background-color: rgb(176, 76, 76);
+    color:rgb(243, 237, 237);
+    box-shadow: 2px 3px 4px rgb(122, 4, 4);
+}
+
+/* Estilização do Formulário de cadastro de Categorias_ */
+#section_cat{
+    width:50%;
+    height:84vh;
+    border-radius:5px;
+    margin:20px 10px 50px 10px;
+    background-color: rgb(235, 232, 235);
+    border-radius:5px;
+    box-shadow:4px 5px 6px rgb(189, 189, 189);
+}
+#section_cat h1{
+    margin:20px 10px 30px 20px;
+    font-size:28px;
+}
+
+.campo_div{
+    display:flex;
+    text-align:center;
+    justify-content:space-between;
+}
+.btn_delete_cat_two{
+    width:80px;
+    height:30px;
+    background-color: rgb(200, 45, 45);
+    border:none;
+    border-radius:2px;
+    margin:20px 20px 10px 4px;
+    font-weight:500;
+    font-size:17px;
+    cursor:pointer;
+}/*---------------------------------*/
+
+#section_cat .form_cat{
+    display:flex;
+    flex-direction:column;
+}
+#section_cat .form_cat label{
+    margin:15px 10px 10px 60px;
+    font-weight:600;
+    font-size:18px;
+}
+#section_cat .form_cat input{
+    width:70%;
+    height:35px;
+    margin:8px 5px 20px 70px;
+    border-radius:4px;
+    padding-left: 10px;
+    font-size:18px;
+
+}
+#section_cat .form_cat select{
+    width:50%;
+    height:30px;
+    margin:8px 5px 2px 70px;
+    font-weight:bold;
+    font-size:18px;
+}
+.inf{
+    width:75%;
+    margin:8px 5px 10px 70px;
+    color:blue;
+}
+#section_cat .form_cat button{
+    width:30%;
+    height:40px;
+    background-color: rgb(35, 35, 239);
+    color:#fff;
+    font-weight:bold;
+    font-size:18px;
+    position:relative;
+    left:34%;
+    top:38px;
+    cursor:pointer;
+    margin-bottom:10px;
+}
+#section_cat .form_cat button:hover{
+    background-color: rgb(0, 0, 255);
+    color:#ccc;
+}
+
+.listCats{
+    text-decoration: none;
+    color:blue;
+    width:100%;
+    position:relative;
+    left:40px;
+    top:64px;
+    margin:15px 10px 20px 10px;
+}
+.listCats:hover{
+    color:rgb(57, 57, 145);
+}
+
+/*Estilização da rota de Listagem de Categorias  */
+.section_list_cats{
+    width:95%;
+    background-color: rgb(246, 243, 246);
+    margin:10px 15px 55px 10px;
+    box-shadow:3px 4px 5px rgb(176, 176, 176);
+    border-radius:10px;
+}
+.section_list_cats .header_list_cat{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    padding:30px;
+}
+.section_list_cats .header_list_cat a{
+    text-decoration:none;
+    padding:6px 10px 6px 10px;
+    background-color: blue;
+    color:#fff;
+    font-weight:500;
+    font-size:18px;
+    cursor: pointer;
+    border-radius:2px;
+}
+.section_list_cats .header_list_cat a:hover{
+    background-color: rgb(62, 62, 200);
+    color:rgb(229, 223, 223);
+}
+
+.div_list_cats{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.link_cats_form{
+    text-decoration:none;
+    color:blue;
+    margin: 0px 15px 0px 0px;
+}
+.link_cats_form:hover{
+    text-decoration:underline;
+    color:blue;
+}
+/* -------------------------------------------- */
+.list_categorias{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.list_categorias .camps_cat{
+    width:30%;
+    margin:10px;
+    box-shadow:3px 4px 5px 5px #ccc;
+}
+.list_categorias .camps_cat h3,p{
+    margin:10px;
+}
+.camps_cat .buttons_list_cat{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    padding:10px;
+}
+.camps_cat .buttons_list_cat .btn_edit_cat{
+    width:80px;
+    height:30px;
+    background-color: rgb(76, 56, 193);
+    border:none;
+    border-radius:2px;
+    margin:10px;
+    font-weight:500;
+    font-size:17px;
+    cursor:pointer;
+}
+.camps_cat .buttons_list_cat .btn_delete_cat{
+    width:80px;
+    height:30px;
+    background-color: rgb(200, 45, 45);
+    border:none;
+    border-radius:2px;
+    margin:10px;
+    font-weight:500;
+    font-size:17px;
+    cursor:pointer;
+}
+
+.volt_cats{
+    width:120px;
+    font-weight:bold;
+    font-size:20px;
+    cursor:pointer;
+    text-decoration:none;
+    position:relative;
+    top:65px;
+    margin-left:15px;
+}
+
+/* -------------------------------------------------- */
+.cat_list{
+    width:80%;
+    background-color: rgb(240, 233, 233);
+    margin:15px 10px 65px 10px;
+    border-radius:5px;
+    box-shadow: 6px 6px 5px #ccc;
+}
+.cat_list .categorias_title{
+    margin:20px;
+}
+.cat_list h3{
+    margin:20px 10px 20px 20px;
+}
+.cat_list .campo_list_cats{
+    width:40%;
+    margin:20px 10px 10px 42px;
+}
+.cat_list .campo_list_cats ul a,.h4_cats{
+    text-decoration:none;
+    color:rgb(62, 24, 214);
+    font-size:20px;
+    margin:15px 0px 0px 0px;
+}

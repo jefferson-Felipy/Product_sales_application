@@ -1,0 +1,30 @@
+<section class="section_list_cats">
+
+        <p class="p_tam" style="margin:20px;">Quantidades de Categorias: {{tamanho}} Categorias_</p>
+    <div class="header_list_cat">
+        <h2 class="title_list_cats">Listagem das Categorias dos Produtos</h2>
+        <a href="/categorias/formcats" class="new_cat">Nova Categoria</a>
+    </div>
+    
+    <div class="list_categorias">
+        {{#each categorias}}
+        <div class="camps_cat">
+            
+            <h3>Categoria: {{nome}}</h3>
+            <p>Slug: {{slug}}</p>
+            <hr>
+            <p>Data de criação: {{date}}</p>
+            <hr>
+            <div class="buttons_list_cat">
+                <a href="/categorias/editarcats/{{_id}}"><button class="btn_edit_cat">Editar</button></a>
+                <form action="/categorias/deletarcat/{{_id}}" method="post">
+                    <button class="btn_delete_cat">Deletar</button>
+                </form>
+        </div>
+        </div>
+        {{else}}
+        <h3 style="margin:30px;">Nenhuma Categoria cadastrada</h3>
+        {{/each}}
+    </div>
+    
+</section>
